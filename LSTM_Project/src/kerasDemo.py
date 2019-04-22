@@ -175,33 +175,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# todo 改变进入模型的矩阵维度可以实现城市间的影响，需要修改CSV表格中数据的格式，行（城市名），列为chunk_size_x的数据
-
-'''
-4.11
-需要将获得的数据集分成训练集与测试集
-训练集合：将训练集合分成不同大小的小块，每个小块进行训练得到后一天的数据 与实际爬取到的数据进行比对，调整模型（确认模型已经收敛）
-测试集合：将测试数据导入从而确认模型精确度
-
-Model的修正工作
-空气这方面进行细节研究，去分辨一些peak，针对peak做一些调查
-空气评论的sentiment analysis可以开展了，先判断语句的positive还是negative
-
-5.6号左右presentation
-data collection + visualization + prediction + model
-哪些topic是positive的， 那些方面是negative的
-
-
-4.18
-任务一：
-evaluation
-(1)完善model，选取不同的数据块大小去进行实验，找出相对最优的数据块大小
-(2)选取几个重点城市，绘制evaluation表格
-(3)MSE/RMSE (finish)
-(4)correlation[prediction, real data] (finish)
-(5)spearman correlation (finish)
-
-任务二：
-(1)量化城市之间的影响，城市之间的值进入模型进行预测
-'''
