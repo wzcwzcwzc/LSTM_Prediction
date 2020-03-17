@@ -159,7 +159,7 @@ def plot_img(source_data_set, train_predict, valid_predict, test_predict):
     plt.legend()
     plt.show()
 
-
+# define your own chunk size and epoch times
 def main():
     chunk_size = 3
     input_epochs = 500
